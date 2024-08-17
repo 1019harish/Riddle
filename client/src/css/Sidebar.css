@@ -1,0 +1,57 @@
+    /* Sidebar styling */
+    .sidebar {
+        width: 250px; /* Set the width of the sidebar */
+        height: 100vh; /* Full viewport height */
+        background-color: #620404; /* Red background color */
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        position: fixed; /* Fixes the sidebar to the left */
+        top: 0; /* Aligns the sidebar to the top of the page */
+        left: 0; /* Aligns the sidebar to the left of the page */
+        overflow-y: auto; /* Allows scrolling if content exceeds the height */
+        z-index: 1000; /* Ensures the sidebar is above other content */
+    }
+    
+    /* Styling for the sidebar links */
+    .sidebar ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .sidebar ul li {
+        margin: 15px 0;
+    }
+    
+    .sidebar ul li a {
+        color: #fff; /* White text color for links */
+        text-decoration: none; /* Remove underline */
+        display: block; /* Makes the link fill the list item */
+        padding: 10px;
+        border-radius: 4px; /* Rounded corners */
+        transition: background-color 0.3s ease; /* Smooth background color transition */
+    }
+    
+    .sidebar ul li a:hover {
+        background-color: #c50c0c; /* Darker red for hover effect */
+    }
+    
+    /* Modal close button styling */
+.modal-header .close {
+    font-size: 1.25rem; /* Adjust font size to your preference */
+    line-height: 1; /* Adjust line height if needed */
+    opacity: 0.5; /* Reduce opacity for a subtle effect */
+}
+
+.modal-header .close:hover {
+    opacity: 1; /* Full opacity on hover */
+}
+
+.modal-header .close span {
+    display: inline-block; /* Ensure the content inside spans is centered */
+    width: 1.5rem; /* Set a fixed width */
+    height: 1.5rem; /* Set a fixed height */
+    text-align: center; /* Center the text inside the span */
+}

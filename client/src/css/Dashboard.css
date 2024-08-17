@@ -1,0 +1,73 @@
+    /* Dashboard container styling */
+    .dashboard {
+        display: flex;
+        flex-direction: column; /* Stack sidebar and content vertically */
+        min-height: 100vh; /* Full viewport height */
+        border-radius: 10px;
+    }
+    
+    /* Sidebar styling */
+    .sidebar {
+        width: 250px; /* Set the width of the sidebar */
+        height: 100vh; /* Full viewport height */
+        background-color: #530e0e; /* Red background color */
+        color: #fff;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        position: fixed; /* Fixes the sidebar to the left */
+        top: 0; /* Aligns the sidebar to the top of the page */
+        left: 0; /* Aligns the sidebar to the left of the page */
+        overflow-y: auto; /* Allows scrolling if content exceeds the height */
+        z-index: 1000; /* Ensures the sidebar is above other content */
+    }
+    
+    /* Content area styling */
+    .dashboard-content {
+        margin-left: 250px; /* Leave space for the fixed sidebar */
+        padding: 20px;
+        padding-bottom: 80px; /* Ensure space for the footer */
+        flex-grow: 1; /* Allows the content area to grow and fill the remaining space */
+        background-color: #f4f4f4; /* Light background color for the content area */
+        box-sizing: border-box; /* Includes padding and border in element's total width and height */
+        min-height: calc(100vh - 60px); /* Adjust based on the height of the footer */
+    }
+    
+    /* Footer styling */
+    .footer {
+        width: calc(100% - 250px); /* Adjust width to account for sidebar */
+        background-color: #333; /* Dark background color */
+        color: #fff; /* White text color */
+        text-align: center; /* Center-align text */
+        padding: 20px; /* Padding around footer content */
+        position: absolute; /* Fixed position relative to the content area */
+        bottom: 0; /* Aligns the footer to the bottom of the content area */
+        left: 250px; /* Aligns the footer to the left of the content area */
+        z-index: 1000; /* Ensures the footer is above other content */
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .dashboard {
+        flex-direction: column;
+        }
+    
+        .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: auto;
+        left: auto;
+        }
+    
+        .dashboard-content {
+        margin-left: 0; /* Remove margin for smaller screens */
+        padding-bottom: 80px; /* Ensure space for the footer on small screens */
+        }
+    
+        .footer {
+        position: relative; /* Changes the position to relative on small screens */
+        bottom: auto; /* Removes fixed bottom position */
+        }
+    }
+    

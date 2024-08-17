@@ -1,0 +1,35 @@
+/* SolveRiddle.css */
+.riddle-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    /* Remove fixed height */
+    height: auto;
+    /* Make sure it grows to fit the content but doesn't exceed container */
+    flex: 1;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    /* Remove fixed height */
+    height: auto;
+    /* Ensure it fits the container size */
+    flex: 1;
+}
+
+.text-success {
+    color: green;
+    font-weight: bold;
+}
+
+.error-card {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+}

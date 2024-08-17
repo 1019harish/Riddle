@@ -1,0 +1,73 @@
+/* src/styles.css */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+div {
+  margin-bottom: 1rem;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+input {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+/* Navbar.css */
+/* Navbar.css */
+.transparent-navbar {
+  background-color: transparent !important; /* Ensure background is transparent */
+  backdrop-filter: none; /* Remove any blur effect if applied */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Optional: Add a subtle border if desired */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between brand and nav items */
+  align-items: center; /* Center items vertically */
+}
+
+.navbar-brand {
+  font-weight: bold; /* Make the brand name bold */
+}
+
+.nav-link {
+  color: #555; /* Default text color for links */
+}
+
+.nav-link.active {
+  color: #007bff; /* Color for the active link */
+  font-weight: bold; /* Make active link text bold */
+}
+
+.nav-link:hover {
+  color: #0056b3; /* Color for links on hover */
+}
+
+.navbar-nav {
+  margin: 0; /* Remove default margin */
+}
+
+.navbar-nav .nav-item {
+  margin-right: 1rem; /* Spacing between the nav items */
+}
+
+.navbar-nav.mx-auto {
+  margin-left: auto; /* Center nav items */
+  margin-right: auto; /* Center nav items */
+}
+

@@ -1,0 +1,48 @@
+.landing-main {
+    background-image: url('../images/background_image.jpeg');
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    font-size: 30px;
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #080808; /* Dark color for text */
+    padding: 20px; /* Optional padding for better spacing */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    text-align: center; /* Center align text */
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay to enhance text visibility */
+    margin: 0; /* Remove default margin */
+    border-radius: 15px; /* Rounded corners for elevation effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Elevation effect with shadow */
+}
+
+/* Ensure buttons have no default styling */
+.landing-login-button,
+.landing-register-button {
+    background: rgba(192, 45, 45, 0.8); /* Slightly opaque button background */
+    color: #333; /* Dark text color for buttons */
+    transition: background 1s linear, color 500ms linear;
+    width: 450px;
+    height: 50px;
+    border-radius: 30px; /* Rounded corners */
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.4rem;
+    cursor: pointer;
+    margin-top: 10px;
+    border: none; /* Remove default button border */
+    outline: none; /* Remove default button outline */
+}
+
+.landing-login-button:hover,
+.landing-register-button:hover {
+    color: #fff; /* Change text color on hover */
+    background-color: rgb(186, 18, 18); /* Fully opaque background on hover */
+    border-color: rgb(236, 0, 0); /* Matching border color on hover */
+}
