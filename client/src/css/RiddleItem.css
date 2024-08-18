@@ -165,8 +165,8 @@
     
 
     :root {
-        --background-color: #ffffff; /* Replace with your background color */
-        --card-box-shadow-1: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        --background-color: #e4003100; /* Replace with your background color */
+        --card-box-shadow-1: 0px 4px 8px rgba(203, 9, 9, 0.1);
         --card-box-shadow-2: 0px 1px 2px rgba(0, 0, 0, 0.05);
         --card-hover-box-shadow-1: 0px 6px 12px rgba(0, 0, 0, 0.2);
         --card-hover-box-shadow-2: 0px 2px 4px rgba(0, 0, 0, 0.1);

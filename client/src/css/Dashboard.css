@@ -28,9 +28,11 @@
         padding: 20px;
         padding-bottom: 80px; /* Ensure space for the footer */
         flex-grow: 1; /* Allows the content area to grow and fill the remaining space */
-        background-color: #f4f4f4; /* Light background color for the content area */
+        background-color: #7ad211a3; /* Light background color for the content area */
         box-sizing: border-box; /* Includes padding and border in element's total width and height */
         min-height: calc(100vh - 60px); /* Adjust based on the height of the footer */
+        border: 7px solid black;
+        border-radius: 0px 129px;           
     }
     
     /* Footer styling */
